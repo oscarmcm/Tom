@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+
+		<title>Tom-Pomodoro</title>
+
+		<link rel="stylesheet" type="text/css" href="css/brick-0.9.2.css"/>
+		<link rel="stylesheet" type="text/css" href="csss/bootstrap.min.css"/>
+
+		<script type="text/javascript" src="js/brick-0.9.2.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.timers.js"></script>
+    	<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+		<!--appbar-->
+		<x-appbar>
+		    <div>=</div>
+		    <header>Tom The Pomodoro Clock</header>
+		</x-appbar>
+<!--
+		<div class="container">
+    <div>
+        <div id="reminderContainer" class="well hide">ÌáÊ¾ÐÅÏ¢</div>
+    </div>
+    <div>
+        <div id="mainTimeCounter">25:00</div>
+    </div>
+    <div>
+        <div class="progress progress-striped">
+            <div class="bar" id="mainTimeProgress" style="width: 100%;"></div>
+        </div>
+    </div>
+
+    <div style="margin-top: 2em" class="clearfix well">
+
+        <button class="btn btn-large btn-primary" id="startBtn">Start Pomodoro</button>
+        <button class="btn btn-large disabled" id="stopBtn">Stop</button>
+
+        <span class="pull-right">
+            <button class="btn btn-large" id="reminderBtn" data-toggle="modal" data-target="#txtModal">Set Reminder</button>
+            <button class="btn btn-large" id="timerBtn" data-toggle="modal" data-target="#txtModal2">Set Timer</button>
+        </span>
+
+    </div>
+
+		--><div><figure>
+		<x-deck selected-index="0">
+		    <x-card style="background-color: rgb(144, 250, 91);">0<span>First</span></x-card>
+		    <x-card style="background-color: rgb(149, 212, 219);">1<span>Second</span></x-card>
+		    <x-card style="background-color: rgb(144, 250, 91);">2<span>Third</span></x-card>
+		    <x-card>3<span>Fourth</span></x-card>
+		    <x-card>4<span>Fifth</span></x-card>
+		</x-deck>--></figure></div>
+		<script type="text/javascript">prevButton.addEventListener("click", function(){
+    deck.shufflePrev();
+});
+nextButton.addEventListener("click", function(){
+    deck.shuffleNext();
+});
+toButton.addEventListener("click", function(){
+    deck.shuffleTo(1);
+});</script>
+
+		<div class="controls">
+                <button class="btn btn-default prev">Previous card</button>
+                <button class="btn btn-default next">Next card</button>
+                <button class="btn btn-default shuffleto" target="1">Shuffle to card 1</button>
+            </div>
+	</body>
+
+</html>
