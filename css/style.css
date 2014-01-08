@@ -528,7 +528,9 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
-
+h3 {
+  text-color: #FFF;
+}
 #container
 {
     min-width: 280px;
@@ -557,7 +559,7 @@ h1
 
 #state {
   font-size: 300%;
-  color: #999;
+  color: #A12;
   margin: 20px auto;
   max-width: 250px;
 }
