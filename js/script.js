@@ -1,4 +1,4 @@
-/* Author: Egil Hansen */
+/* Author: Oscar Cortez */
 (function ($) {
 
     var timerElm = $('#timer'),
