@@ -6,12 +6,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Tom-Pomodoro</title>
 		<meta name="viewport" content="width=device-width">
-    	<link rel="stylesheet" href="css/style.css">
+
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link rel="stylesheet" type="text/css" href="css/main.css">
+    	
     </head>
-    <body tabindex="0">
+    <body tabindex="0" style="background-color: Tomato">
     	<div id="container">
 	        <header>
-	            <h1>Tom The Pomodoro Clock</h1>
+	            <h3>Tom</h3>
+	            <h3>The Pomodoro Clock</h3>
 	        </header>
 	        <div role="main">
             	<div id="state">
@@ -23,7 +27,7 @@
             	<fieldset>
 	                <legend>Options</legend>
 	                <div>
-	                    <label for="work"><span>Work:</span> <input id="work" type="number" min="20" max="50" value="25" step="5" autocomplete="true"/> minutes</label>
+	                    <label for="work"><span>Work:</span> <input id="work" type="number" min="20" max="50" value="2" step="5" autocomplete="true"/> minutes</label>
 	                </div>
 	                <div>
 	                    <label for="break"><span>Break:</span> <input id="break" type="number" min="1" max="15" value="5" step="1" autocomplete="true" /> minutes</label>
@@ -34,10 +38,19 @@
             	</fieldset>
         	</div>
         	<footer>
-        		<p>Handcrafted with <3 in Nicaragua</p>
+        		<h3>Handcrafted With <div class="corazon"></div> In Nicaragua</h3>
 
         	</footer>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+	    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="js/libs/jquery-ui-1.7.2.min.js"><\/script>')</script>
 
+        <!-- scripts concatenated and minified via ant build script-->
+    	<script src="js/plugins.js"></script>
+    	<script src="js/script.js"></script>
+    	<!-- end scripts-->
 	</body>
 
 </html>
