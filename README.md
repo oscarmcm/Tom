@@ -1,4 +1,4 @@
 Tom
 ===
 
-Minimal Pomodoro App
+Minimal Pomodoro App For Firefox OS
